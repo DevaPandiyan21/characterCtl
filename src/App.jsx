@@ -59,9 +59,9 @@ function App() {
       <Canvas shadows>
         {/* <Perf position="top-left"/> */}
         <Environment background files="/night.hdr" />
-        {/* <Light /> */}
+        <Light />
 
-        <Physics debug timeStep={"vary"}>
+        <Physics timeStep={"vary"}>
           <KeyboardControls map={keyboardMap}>
             <RigidBody type="fixed" colliders="trimesh">
               <mesh position-y={-3.3} receiveShadow>
